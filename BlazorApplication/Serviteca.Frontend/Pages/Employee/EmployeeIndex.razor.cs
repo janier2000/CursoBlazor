@@ -10,11 +10,12 @@ namespace Serviteca.Frontend.Pages.Employee
 
         protected override async Task OnInitializedAsync()
         {
-            LoadEmployees();
+           await Task.Run(LoadEmployees);
         }
 
         private void LoadEmployees()
         {
+            System.Threading.Thread.Sleep(3000);    
             e.Employee e1 = new e.Employee
             {
                 EmployeeId = 1,
