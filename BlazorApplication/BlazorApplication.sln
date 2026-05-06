@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.37111.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWebAssemblyPractice", "BlazorWebAssemblyPractice\BlazorWebAssemblyPractice.csproj", "{BC75E22C-59B1-458B-BC20-03A77ACF45D8}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement.Models", "EmployeeManagement.Models\EmployeeManagement.Models.csproj", "{086F0F8A-2E31-40A5-B303-39D9D7951427}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement.Web", "EmployeeManagement.Web\EmployeeManagement.Web.csproj", "{D6DCB6B3-56B8-4876-AE8D-F859A64E6845}"
@@ -21,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BC75E22C-59B1-458B-BC20-03A77ACF45D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BC75E22C-59B1-458B-BC20-03A77ACF45D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BC75E22C-59B1-458B-BC20-03A77ACF45D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BC75E22C-59B1-458B-BC20-03A77ACF45D8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{086F0F8A-2E31-40A5-B303-39D9D7951427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{086F0F8A-2E31-40A5-B303-39D9D7951427}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{086F0F8A-2E31-40A5-B303-39D9D7951427}.Release|Any CPU.ActiveCfg = Release|Any CPU
