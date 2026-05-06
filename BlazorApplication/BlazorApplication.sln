@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement.WebAssem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serviteca.Frontend", "Serviteca.Frontend\Serviteca.Frontend.csproj", "{ED870748-5CD7-453F-ADFF-E7A2E0ABED11}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serviteca.Backend", "Serviteca.Backend\Serviteca.Backend.csproj", "{0DCBD5CA-74C0-4F3A-BFB6-B256BCCEB974}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{ED870748-5CD7-453F-ADFF-E7A2E0ABED11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED870748-5CD7-453F-ADFF-E7A2E0ABED11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED870748-5CD7-453F-ADFF-E7A2E0ABED11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DCBD5CA-74C0-4F3A-BFB6-B256BCCEB974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DCBD5CA-74C0-4F3A-BFB6-B256BCCEB974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DCBD5CA-74C0-4F3A-BFB6-B256BCCEB974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DCBD5CA-74C0-4F3A-BFB6-B256BCCEB974}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
