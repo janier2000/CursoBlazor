@@ -24,7 +24,7 @@ namespace Serviteca.Frontend.Pages.Employee
                 Email = "David@pragimtech.com",
                 DateOfBrith = new DateTime(1980, 10, 5),
                 Gender = Gender.Male,
-                Department = new Department { DepartmentId = 1, DepartmentName = "IT" },
+                //Department = new Department { DepartmentId = 1, DepartmentName = "IT" },
                 PhotoPath = "images/john.png"
             };
 
@@ -36,7 +36,7 @@ namespace Serviteca.Frontend.Pages.Employee
                 Email = "Sam@pragimtech.com",
                 DateOfBrith = new DateTime(1981, 12, 22),
                 Gender = Gender.Male,
-                Department = new Department { DepartmentId = 2, DepartmentName = "HR" },
+                //Department = new Department { DepartmentId = 2, DepartmentName = "HR" },
                 PhotoPath = "images/sam.jpg"
             };
 
@@ -48,7 +48,7 @@ namespace Serviteca.Frontend.Pages.Employee
                 Email = "mary@pragimtech.com",
                 DateOfBrith = new DateTime(1979, 11, 11),
                 Gender = Gender.Female,
-                Department = new Department { DepartmentId = 1, DepartmentName = "IT" },
+                //Department = new Department { DepartmentId = 1, DepartmentName = "IT" },
                 PhotoPath = "images/mary.png"
             };
 
@@ -60,7 +60,7 @@ namespace Serviteca.Frontend.Pages.Employee
                 Email = "sara@pragimtech.com",
                 DateOfBrith = new DateTime(1982, 9, 23),
                 Gender = Gender.Female,
-                Department = new Department { DepartmentId = 3, DepartmentName = "Payroll" },
+                //Department = new Department { DepartmentId = 3, DepartmentName = "Payroll" },
                 PhotoPath = "images/sara.png"
             };
 

@@ -25,4 +25,8 @@
     <Folder Include="Helpers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EmployeeManagement.Models\EmployeeManagement.Models.csproj" />
+  </ItemGroup>
+
 </Project>
