@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement.WebAssem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serviteca.Frontend", "Serviteca.Frontend\Serviteca.Frontend.csproj", "{ED870748-5CD7-453F-ADFF-E7A2E0ABED11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serviteca.Backend", "Serviteca.Backend\Serviteca.Backend.csproj", "{0DCBD5CA-74C0-4F3A-BFB6-B256BCCEB974}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagements.Api", "Serviteca.Backend\EmployeeManagements.Api.csproj", "{0DCBD5CA-74C0-4F3A-BFB6-B256BCCEB974}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
