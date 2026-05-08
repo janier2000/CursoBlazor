@@ -1,0 +1,47 @@
+﻿@page "/DataBinding"
+
+<h3>DataBinding</h3>
+<b>Name :</b> @Name
+
+<div>
+    <b>Name with salutation:</b> @(Gender == "Male" ? $"Mr. {Name}" : $"Miss. {Name}")
+</div>
+
+<div>
+    <b>Name :</b>
+    <input value="@Name" />
+</div>
+
+<br />
+<h3>two way data bnding</h3>
+<br />
+<h3>onchange</h3>
+<div>
+    <b>Name :</b> 
+    <input value="@Name" @onchange="@(e => { Name = e.Value.ToString(); })" />
+</div>
+<br />
+<h3>bind</h3>
+<div>
+    <b>Name :</b>
+    <b>Name :</b> <input @bind="Name" />
+</div>
+<br />
+<h3>bind</h3>
+<div>
+    <b>Name :</b>
+    <b>Name :</b> <input @bind="Name" @bind:event="oninput" />
+</div>
+
+<br />
+<b>Colour :</b>
+<input @bind="Colour" />
+
+<div @bind-style="Colour" @bind-style:event="onchange">
+    <h3>The background colour of this text changes</h3>
+</div>
+
+
+
+
+
