@@ -9,6 +9,10 @@ namespace EmployeeManagement.WebAssembly.Pages.Employee
         public List<e.Employee>? LstEmployees { get; set; }
         [Inject]private IRepository Repository { get; set; } = null!;
 
+        public bool ShowFooter { get; set; } = true;
+        public bool ShowList1 { get; set; } = true;
+        public bool ShowList2 { get; set; } = true;
+
         protected async override Task OnInitializedAsync()
         {
             await LoadListAsync();

@@ -1,26 +1,55 @@
 ﻿@page "/Employee"
 <h3>List employee</h3>
 
-<div class="card-deck">
-    @foreach (var item in LstEmployees)
-    {
-        <div class="card m-3" style="min-width: 18rem; max-width:30.5%;">
-            <div class="card-header">
-                <h3>@item.FirstName  @item.LastName</h3>
+
+
+<br />
+<label for="showFooter">Show Footer</label>
+<input type="checkbox" id="showFooter" @bind="ShowFooter" />
+<br />
+<label for="showFooter">Show List1</label>
+<input type="checkbox" id="ShowList1" @bind="ShowList1" />
+<br />
+<label for="showFooter">Show List2</label>
+<input type="checkbox" id="ShowList2" @bind="ShowList2" />
+<br />
+
+
+@if (ShowList1)
+{
+    <div class="card-deck">
+        @foreach (var item in LstEmployees!)
+        {
+            <DisplayEmployee Employee="item" ShowFooter="ShowFooter">
+            </DisplayEmployee>
+        }
+    </div>
+} 
+@if (ShowList2)
+{
+    <div class="card-deck">
+        @foreach (var item in LstEmployees!)
+        {
+            <div class="card m-3" style="min-width: 18rem; max-width:30.5%;">
+                <div class="card-header">
+                    <h3>@item.FirstName  @item.LastName</h3>
+                </div>
+
+                <img class="card-img-top imageThumbnail" src="@item.PhotoPath" />
+
+                @if (ShowFooter)
+                {
+                    <div class="card-footer text-center">
+                        <a href="/Employee/details/@item.Id" class="btn btn-primary m-1"> View</a>
+
+                        <a href="#" class="btn btn-primary m-1">Edit</a>
+
+                        <a href="#" class="btn btn-danger m-1">Delete</a>
+                    </div>
+                }
             </div>
-
-            <img class="card-img-top imageThumbnail" src="@item.PhotoPath" />
-
-
-            <div class="card-footer text-center">
-                <a href="/Employee/details/@item.Id" class="btn btn-primary m-1"> View</a>
-
-                <a href="#" class="btn btn-primary m-1">Edit</a>
-
-                <a href="#" class="btn btn-danger m-1">Delete</a>
-            </div>
-        </div>
-    }
-</div>
+        }
+    </div>
+}
 
 

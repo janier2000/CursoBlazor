@@ -42,6 +42,18 @@
 </div>
 
 
+<br />
+<b>Blazor two way data binding example :</b>
+<b>bind:event </b>
+
+<div>
+    <textarea @bind="Description" @bind:event="oninput" />
+</div>
+<div>
+    Count : @Description.Length
+</div>
+
+
 
 
 
