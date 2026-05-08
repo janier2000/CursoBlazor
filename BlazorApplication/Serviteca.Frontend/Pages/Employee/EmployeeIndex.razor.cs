@@ -1,4 +1,8 @@
+using CurrieTechnologies.Razor.SweetAlert2;
 using EmployeeManagement.Models;
+using Microsoft.AspNetCore.Components;
+using Serviteca.Frontend.Repositories;
+using Serviteca.Frontend.Shared;
 using System.Reflection;
 using e = EmployeeManagement.Models;
 
@@ -8,9 +12,32 @@ namespace Serviteca.Frontend.Pages.Employee
     {
         private IEnumerable<e.Employee> LstEmployees { get; set; }
 
+        [Inject] 
+        private IRepository Repository { get; set; } = null!;
+
         protected override async Task OnInitializedAsync()
         {
-           await Task.Run(LoadEmployees);
+            await LoadListAsync();
+        }
+
+
+        private async Task<bool> LoadListAsync()
+        {
+            var url = $"api/employees/";
+            try
+            {
+                var responseHttp = await Repository.GetAsync<List<e.Employee>>(url);
+                if (responseHttp.Error)
+                {
+                    return false;
+                }
+                LstEmployees = responseHttp.Response!;
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
         private void LoadEmployees()

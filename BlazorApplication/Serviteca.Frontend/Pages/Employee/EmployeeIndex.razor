@@ -1,14 +1,14 @@
 ﻿@page "/Employee"
-<h3>EmployeeList</h3>
+<h3>List Employee</h3>
 
 
-@if (LstEmployees != null)
+@* @if (LstEmployees != null)
 {
     <h3>cargar</h3>
     <div class="spinner"></div>
 }
 else
-{
+{ *@
     <div class="card-deck">
         @foreach (var employee in LstEmployees!)
         {
@@ -30,4 +30,4 @@ else
             </div>
         }
     </div>
-}
+@* } *@
