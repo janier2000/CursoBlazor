@@ -16,7 +16,7 @@ namespace EmployeeManagement.Web.Components.Pages.Employee
         {
             Models.Employee e1 = new Models.Employee
             {
-                EmployeeId = 1,
+                //EmployeeId = 1,
                 FirstName = "John",
                 LastName = "Hastings",
                 Email = "David@pragimtech.com",
@@ -28,7 +28,7 @@ namespace EmployeeManagement.Web.Components.Pages.Employee
 
             Models.Employee e2 = new Models.Employee
             {
-                EmployeeId = 2,
+                //EmployeeId = 2,
                 FirstName = "Sam",
                 LastName = "Galloway",
                 Email = "Sam@pragimtech.com",
@@ -40,7 +40,7 @@ namespace EmployeeManagement.Web.Components.Pages.Employee
 
             Models.Employee e3 = new Models.Employee
             {
-                EmployeeId = 3,
+                //EmployeeId = 3,
                 FirstName = "Mary",
                 LastName = "Smith",
                 Email = "mary@pragimtech.com",
@@ -52,7 +52,7 @@ namespace EmployeeManagement.Web.Components.Pages.Employee
 
             Models.Employee e4 = new Models.Employee
             {
-                EmployeeId = 3,
+                //EmployeeId = 3,
                 FirstName = "Sara",
                 LastName = "Longway",
                 Email = "sara@pragimtech.com",

@@ -27,22 +27,22 @@ namespace Serviteca.Backend.Data
             {
                 _ = _context.Departments.Add(new Department
                 {
-                    DepartmentId=1,
+                    //DepartmentId=1,
                     DepartmentName = "IT"
                 });
                 _ = _context.Departments.Add(new Department
                 {
-                    DepartmentId = 2,
+                    //DepartmentId = 2,
                     DepartmentName = "HR"
                 });
                 _ = _context.Departments.Add(new Department
                 {
-                    DepartmentId = 3,
+                    //DepartmentId = 3,
                     DepartmentName = "Payroll"
                 });
                 _ = _context.Departments.Add(new Department
                 {
-                    DepartmentId = 4,
+                    //DepartmentId = 4,
                     DepartmentName = "Admin"
                 });
             }
@@ -54,7 +54,7 @@ namespace Serviteca.Backend.Data
             {
                 _ = _context.Employees.Add(new Employee
                 {
-                    EmployeeId = 1,
+                    //EmployeeId = 1,
                     FirstName = "John",
                     LastName = "Hastings",
                     Email = "David@pragimtech.com",
@@ -65,7 +65,7 @@ namespace Serviteca.Backend.Data
                 });
                 _context.Employees.Add(new Employee
                 {
-                    EmployeeId = 2,
+                    //EmployeeId = 2,
                     FirstName = "Sam",
                     LastName = "Galloway",
                     Email = "Sam@pragimtech.com",
@@ -77,7 +77,7 @@ namespace Serviteca.Backend.Data
                 });
                 _context.Employees.Add(new Employee
                 {
-                    EmployeeId = 3,
+                    //EmployeeId = 3,
                     FirstName = "Mary",
                     LastName = "Smith",
                     Email = "mary@pragimtech.com",
@@ -89,7 +89,7 @@ namespace Serviteca.Backend.Data
                 });
                 _context.Employees.Add(new Employee
                 {
-                    EmployeeId = 3,
+                    //EmployeeId = 3,
                     FirstName = "Mary",
                     LastName = "Smith",
                     Email = "mary@pragimtech.com",
@@ -100,7 +100,7 @@ namespace Serviteca.Backend.Data
                 });
                 _context.Employees.Add(new Employee
                 {
-                    EmployeeId = 4,
+                    //EmployeeId = 4,
                     FirstName = "Sara",
                     LastName = "Longway",
                     Email = "sara@pragimtech.com",

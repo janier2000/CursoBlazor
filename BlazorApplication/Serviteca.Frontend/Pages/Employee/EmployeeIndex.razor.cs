@@ -18,7 +18,7 @@ namespace Serviteca.Frontend.Pages.Employee
             System.Threading.Thread.Sleep(3000);    
             e.Employee e1 = new e.Employee
             {
-                EmployeeId = 1,
+                //EmployeeId = 1,
                 FirstName = "John",
                 LastName = "Hastings",
                 Email = "David@pragimtech.com",
@@ -30,7 +30,7 @@ namespace Serviteca.Frontend.Pages.Employee
 
             e.Employee e2 = new e.Employee
             {
-                EmployeeId = 2,
+                //EmployeeId = 2,
                 FirstName = "Sam",
                 LastName = "Galloway",
                 Email = "Sam@pragimtech.com",
@@ -42,7 +42,7 @@ namespace Serviteca.Frontend.Pages.Employee
 
             e.Employee e3 = new e.Employee
             {
-                EmployeeId = 3,
+                //EmployeeId = 3,
                 FirstName = "Mary",
                 LastName = "Smith",
                 Email = "mary@pragimtech.com",
@@ -54,7 +54,7 @@ namespace Serviteca.Frontend.Pages.Employee
 
             e.Employee e4 = new e.Employee
             {
-                EmployeeId = 3,
+                //EmployeeId = 3,
                 FirstName = "Sara",
                 LastName = "Longway",
                 Email = "sara@pragimtech.com",
