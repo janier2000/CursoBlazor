@@ -1,15 +1,16 @@
 ﻿@page "/Employee"
 <h3>List employee</h3>
-
-
-
 <br />
+
+<h3>Select Employees Count - @SelectedEmployeesCount</h3>
 <label for="showFooter">Show Footer</label>
 <input type="checkbox" id="showFooter" @bind="ShowFooter" />
 <br />
+
 <label for="showFooter">Show List1</label>
 <input type="checkbox" id="ShowList1" @bind="ShowList1" />
 <br />
+
 <label for="showFooter">Show List2</label>
 <input type="checkbox" id="ShowList2" @bind="ShowList2" />
 <br />
@@ -20,7 +21,7 @@
     <div class="card-deck">
         @foreach (var item in LstEmployees!)
         {
-            <DisplayEmployee Employee="item" ShowFooter="ShowFooter">
+            <DisplayEmployee Employee="item" ShowFooter="ShowFooter" OnEmployeeSelection="EmployeeSelectionChanged">
             </DisplayEmployee>
         }
     </div>

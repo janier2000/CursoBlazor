@@ -9,9 +9,26 @@ namespace EmployeeManagement.WebAssembly.Pages.Employee
         public List<e.Employee>? LstEmployees { get; set; }
         [Inject]private IRepository Repository { get; set; } = null!;
 
-        public bool ShowFooter { get; set; } = true;
+        [Parameter] public bool ShowFooter { get; set; } = true;
+
+        [Parameter] public EventCallback<bool> OnEmployeeSelectio { get; set; }
         public bool ShowList1 { get; set; } = true;
-        public bool ShowList2 { get; set; } = true;
+         public bool ShowList2 { get; set; } = true;
+        protected int SelectedEmployeesCount { get; set; } = 0;
+
+       
+
+        protected void EmployeeSelectionChanged(bool isSelected)
+        {
+            if (isSelected)
+            {
+                SelectedEmployeesCount++;
+            }
+            else
+            {
+                SelectedEmployeesCount--;
+            }
+        }
 
         protected async override Task OnInitializedAsync()
         {
