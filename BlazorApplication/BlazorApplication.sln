@@ -5,8 +5,6 @@ VisualStudioVersion = 17.14.37111.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement.Models", "EmployeeManagement.Models\EmployeeManagement.Models.csproj", "{086F0F8A-2E31-40A5-B303-39D9D7951427}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement.Web", "EmployeeManagement.Web\EmployeeManagement.Web.csproj", "{D6DCB6B3-56B8-4876-AE8D-F859A64E6845}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement.WebAssembly", "EmployeeManagement.WebAssembly\EmployeeManagement.WebAssembly.csproj", "{4FCF138E-5DF3-46D6-907E-851F17A46724}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serviteca.Frontend", "Serviteca.Frontend\Serviteca.Frontend.csproj", "{ED870748-5CD7-453F-ADFF-E7A2E0ABED11}"
@@ -23,10 +21,6 @@ Global
 		{086F0F8A-2E31-40A5-B303-39D9D7951427}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{086F0F8A-2E31-40A5-B303-39D9D7951427}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{086F0F8A-2E31-40A5-B303-39D9D7951427}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D6DCB6B3-56B8-4876-AE8D-F859A64E6845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D6DCB6B3-56B8-4876-AE8D-F859A64E6845}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D6DCB6B3-56B8-4876-AE8D-F859A64E6845}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D6DCB6B3-56B8-4876-AE8D-F859A64E6845}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4FCF138E-5DF3-46D6-907E-851F17A46724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4FCF138E-5DF3-46D6-907E-851F17A46724}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FCF138E-5DF3-46D6-907E-851F17A46724}.Release|Any CPU.ActiveCfg = Release|Any CPU

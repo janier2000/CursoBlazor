@@ -1,16 +1,37 @@
-using EmployeeManagement.Models;
+using EmployeeManagement.WebAssembly.Repositories;
 using Microsoft.AspNetCore.Components;
+using e = EmployeeManagement.Models;
 
 namespace EmployeeManagement.WebAssembly.Pages.Employee
 {
-    public partial class Employee
+    public partial class EmployeeIndex
     {
-        private IEnumerable<Models.Employee> Employees { get; set; }
+        public List<e.Employee>? LstEmployees { get; set; }
+        [Inject]private IRepository Repository { get; set; } = null!;
 
-        //protected override async Task OnInitializedAsync()
-        //{
-        //    LoadEmployees();
-        //}
+        protected async override Task OnInitializedAsync()
+        {
+            await LoadListAsync();
+        }
+
+        private async Task<bool> LoadListAsync()
+        {
+            var url = $"api/employees/";
+            try
+            {
+                var responseHttp = await Repository.GetAsync<List<e.Employee>>(url);
+                if (responseHttp.Error)
+                {
+                    return false;
+                }
+                LstEmployees = responseHttp.Response!;
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
 
         //private void LoadEmployees()
         //{
