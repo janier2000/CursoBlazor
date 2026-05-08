@@ -1,0 +1,28 @@
+﻿@page "/Employee/details/{Id:int}"
+
+<div class="row justify-content-center m-3">
+    <div class="col-sm-8">
+        <div class="card">
+            <div class="card-header">
+                <h1>@employeeENT!.FirstName @employeeENT.LastName</h1>
+            </div>
+
+            <div class="card-body text-center">
+                <img class="card-img-top" src="@employeeENT.PhotoPath" />
+                FirstName
+                <h4>ID : @employeeENT.Id</h4>
+                <h4>Firs tName: @employeeENT.FirstName</h4>
+                <h4>Last Name: @employeeENT.LastName</h4>
+                <h4>Gender : @employeeENT.Gender</h4>
+                <h4>Date Of Brith : @employeeENT.DateOfBrith</h4>
+                <h4>Email : @employeeENT.Email</h4>
+                <h4>Department : @employeeENT.DepartmentId</h4>
+            </div>
+            <div class="card-footer text-center">
+                <a href="/" class="btn btn-primary">Back</a>
+                <a href="#" class="btn btn-primary">Edit</a>
+                <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    </div>
+</div>
